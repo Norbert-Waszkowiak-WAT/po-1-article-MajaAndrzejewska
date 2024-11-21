@@ -1,4 +1,4 @@
-#ifdef UNTITLED1_ARTICLE_H
+#ifndef UNTITLED1_ARTICLE_H
 #define UNTITLED1_ARTICLE_H
 #include <iostream>
 #include <string>
@@ -19,7 +19,7 @@ public:
     :title(articleTitle), author(articleAuthor), publicationYear(publicationYear), journal(journalName){};
 
     Article(Article &other)
-    :title(other.title), author(other.author),publicationYear(other.publicationYear), jurnal(other.journalName){};
+    :title(other.title), author(other.author),publicationYear(other.publicationYear), journal(other.journal){};
 
     string getTitle(){
         return title;
@@ -34,7 +34,7 @@ public:
         return journal;
     }
     void displayInfo(){
-        cout<<"skibidi toaleta";
+        cout<<"skibiditoaleta";
     }
 };
 #endif

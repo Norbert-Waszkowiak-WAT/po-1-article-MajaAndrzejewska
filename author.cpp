@@ -1,4 +1,4 @@
-#ifdef UNTITLED1_AUTHOR_H
+#ifndef UNTITLED1_AUTHOR_H
 #define UNTITLED1_AUTHOR_H
 #include <iostream>
 #include <string>
