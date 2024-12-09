@@ -2,28 +2,26 @@
 #define UNTITLED1_AUTHOR_H
 #include <iostream>
 #include <string>
-using namespace std;
 class Author{
-private:
-    string name;
-    string surname;
-public:
-    Author():
-    name(""), surname(""){};
-    Author(string name, string surname)
-    :name(name), surname(surname){};
-
-    string getSurname(){
+    private:
+      std::string name;
+      std::string surname;
+    public:
+      Author():
+      name(""),surname(""){};
+      Author(std::string name,std::string surname)
+      :name(name),surname(surname){};
+      std::string getSurname(){
         return surname;
-    };
-    string getName(){
+      };
+      std::string getName(){
         return name;
-    };
-    string toString(){
+      };
+      std::string toString(){
         return name +" "+ surname;
-    };
-    void print(){
-        cout<<name<<" "<<surname<<endl;
-    }
+      };
+      void print(){
+        std:: cout<<name<<" "<<surname<<std::endl;
+      };
 };
 #endif
